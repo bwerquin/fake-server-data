@@ -1,0 +1,137 @@
+"questionnaire":[{
+    "id": "simpsons",
+    "label": "Questionnaire SIMPSONS",
+    "components": [
+      {
+        "id": "j6p0ti5h",
+        "type": "Sequence",
+        "label": "I - Introduction",
+        "declarations": [
+          {
+            "id": "j6p0ti5h-d1",
+            "declarationType": "COMMENT",
+            "position": "AFTER_QUESTION_TEXT",
+            "label": "We're going to test your knowledge about the simpsons series.Welcome in the simspons world!"
+          }
+        ],
+        "conditionFilter": "normal"
+      },
+      {
+        "id": "j6p3dkx6",
+        "maxLength": 500,
+        "type": "Textarea",
+        "label": "➡ 1. Before starting, do you have any comments about the Simpsons family?",
+        "response": {
+          "name": "COMMENT",
+          "valueState": [
+            {
+              "type": "PREVIOUS",
+              "value": ""
+            },
+            {
+              "type": "COLLECTED",
+              "value": ""
+            },
+            {
+              "type": "FORCED",
+              "value": ""
+            },
+            {
+              "type": "EDITED",
+              "value": ""
+            },
+            {
+              "type": "INPUTED",
+              "value": ""
+            }
+          ]
+        },
+        "conditionFilter": "normal"
+      },
+      {
+        "id": "j6p0np9q",
+        "type": "CheckboxBoolean",
+        "label": "➡ 2. Are you ready?",
+        "response": {
+          "name": "READY",
+          "valueState": [
+            {
+              "type": "PREVIOUS",
+              "value": 0
+            },
+            {
+              "type": "COLLECTED",
+              "value": 0
+            },
+            {
+              "type": "FORCED",
+              "value": 0
+            },
+            {
+              "type": "EDITED",
+              "value": 0
+            },
+            {
+              "type": "INPUTED",
+              "value": 0
+            }
+          ]
+        },
+        "conditionFilter": "normal"
+      },
+      {
+        "id": "j6p0s7o5",
+        "type": "Subsequence",
+        "label": "General knowledge of the series",
+        "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
+      },
+      {
+        "id": "j3343qhx",
+        "maxLength": "30",
+        "type": "Input",
+        "label": "➡ 3. Who is the producer?",
+        "response": {
+          "name": "PRODUCER",
+          "valueState": [
+            {
+              "type": "PREVIOUS",
+              "value": ""
+            },
+            {
+              "type": "COLLECTED",
+              "value": ""
+            },
+            {
+              "type": "FORCED",
+              "value": ""
+            },
+            {
+              "type": "EDITED",
+              "value": ""
+            },
+            {
+              "type": "INPUTED",
+              "value": ""
+            }
+          ]
+        },
+        "conditionFilter": "#if($READY== 1)normal#{else}hidden#end"
+      }
+    ],
+    "codeLists": [
+    ],
+    "variables": [
+      {
+        "name": "COMMENT",
+        "responseRef": "COMMENT"
+      },
+      {
+        "name": "READY",
+        "responseRef": "READY"
+      },
+      {
+        "name": "PRODUCER",
+        "responseRef": "PRODUCER"
+      }
+    ]
+  } ]     
