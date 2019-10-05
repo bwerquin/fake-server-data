@@ -16,8 +16,8 @@
   "enqueteur": {
     "name": "benoit"
   },
-  "questionnaire":{
-        "id": "i6vwid",
+  "questionnaire":[{
+        "id": "simpsons",
         "label": "Questionnaire SIMPSONS",
         "components": [
           {
@@ -368,80 +368,6 @@
             },
             "conditionFilter": "#if($READY == 1)normal#{else}hidden#end",
             "codeListReference": "j4nwo00f"
-          },
-          {
-            "id": "j6qe0h9q",
-            "type": "Sequence",
-            "label": "III - Characters",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j4nw88h2",
-            "type": "Sequence",
-            "label": "IV - General questions",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j6qe237q",
-            "type": "Subsequence",
-            "label": "Kwik-E-Mart",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j6qejudb",
-            "type": "Subsequence",
-            "label": "Clowning",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j6qeh91y",
-            "type": "Subsequence",
-            "label": "Transport",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j6qfx9qe",
-            "type": "Sequence",
-            "label": "V - Favourite characters",
-            "conditionFilter": "#if($READY == 1)normal#{else}hidden#end"
-          },
-          {
-            "id": "j6z12s2d",
-            "type": "Sequence",
-            "label": "VI - Comment",
-            "conditionFilter": "normal"
-          },
-          {
-            "id": "j6z0z3us",
-            "maxLength": 255,
-            "type": "Textarea",
-            "label": "➡ 1. Do you have any comment about the survey?",
-            "response": {
-              "name": "SURVEY_COMMENT",
-              "valueState": [
-                {
-                  "type": "PREVIOUS",
-                  "value": ""
-                },
-                {
-                  "type": "COLLECTED",
-                  "value": ""
-                },
-                {
-                  "type": "FORCED",
-                  "value": ""
-                },
-                {
-                  "type": "EDITED",
-                  "value": ""
-                },
-                {
-                  "type": "INPUTED",
-                  "value": ""
-                }
-              ]
-            },
-            "conditionFilter": "normal"
           }
         ],
         "codeLists": [
@@ -614,5 +540,5 @@
             "value": "$PERCENTAGE_EXPENSES11$ + $PERCENTAGE_EXPENSES21$ + $PERCENTAGE_EXPENSES31$ + $PERCENTAGE_EXPENSES41$ + $PERCENTAGE_EXPENSES51$ + $PERCENTAGE_EXPENSES61$ + $PERCENTAGE_EXPENSES71$ + $PERCENTAGE_EXPENSES81$ + $PERCENTAGE_EXPENSES91$ + $PERCENTAGE_EXPENSES101$"
           }
         ]
-      }      
+      } ]     
   }
