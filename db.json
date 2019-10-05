@@ -15,5 +15,73 @@
   ],
   "enqueteur": {
     "name": "benoit"
-  }
+  },
+  "questionnaire":[{
+    "id": "simpsons",
+    "label": "Questionnaire SIMPSONS",
+    "components": [
+      {
+        "id": "j6p0ti5h",
+        "type": "Sequence",
+        "label": "I - Introduction",
+        "declarations": [
+          {
+            "id": "j6p0ti5h-d1",
+            "declarationType": "COMMENT",
+            "position": "AFTER_QUESTION_TEXT",
+            "label": "We're going to test your knowledge about the simpsons series.Welcome in the simspons world!"
+          }
+        ],
+        "conditionFilter": "normal"
+      },
+      {
+        "id": "j6p3dkx6",
+        "maxLength": 500,
+        "type": "Textarea",
+        "label": "➡ 1. Before starting, do you have any comments about the Simpsons family?",
+        "response": {
+          "name": "COMMENT",
+          "valueState": [
+            {
+              "type": "PREVIOUS",
+              "value": ""
+            },
+            {
+              "type": "COLLECTED",
+              "value": ""
+            },
+            {
+              "type": "FORCED",
+              "value": ""
+            },
+            {
+              "type": "EDITED",
+              "value": ""
+            },
+            {
+              "type": "INPUTED",
+              "value": ""
+            }
+          ]
+        },
+        "conditionFilter": "normal"
+      }
+    ],
+    "codeLists": [
+    ],
+    "variables": [
+      {
+        "name": "COMMENT",
+        "responseRef": "COMMENT"
+      },
+      {
+        "name": "READY",
+        "responseRef": "READY"
+      },
+      {
+        "name": "PRODUCER",
+        "responseRef": "PRODUCER"
+      }
+    ]
+  } ]
 }
